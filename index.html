@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Redesign</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- menus -->
+    <header>
+      <!-- hamburger -->
+      <div class="hamburger">
+        <!-- bar -->
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <!-- close -->
+        <i class="fa-solid fa-xmark" data-visible="false"></i>
+      </div>
+      <!-- desktop-scr -->
+      <nav class="container desktop-scr">
+        <!-- left-menu -->
+        <ul id="left-menu" class="menu-link">
+          <li><a href="#">our philosophy</a></li>
+          <li><a href="#">houses</a></li>
+          <li><a href="#">map</a></li>
+        </ul>
+        <!-- logo -->
+        <h1><a href="#">retreatm5</a></h1>
+        <!-- right-menu -->
+        <ul id="right-menu" class="menu-link">
+          <li><a href="#">leisure</a></li>
+          <li><a href="#">how to get there</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <!-- mobile-scr -->
+      <nav class="mobile-sc" data-visible="false">
+        <div class="navigation">
+          <!-- logo -->
+          <h1><a href="#">retreatm5</a></h1>
+          <!-- menu-1 -->
+          <ul id="left-menu" class="menu-link">
+            <li><a href="#">our philosophy</a></li>
+            <li><a href="#">houses</a></li>
+            <li><a href="#">map</a></li>
+            <!-- menu-2 -->
+            <li><a href="#">leisure</a></li>
+            <li><a href="#">how to get there</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+          <!-- btns -->
+          <div class="mobile-menu-actions">
+            <a href="#" class="btn-primary">Book a room</a>
+            <a href="#" class="btn-secondary">Write to us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="container">
+        <h1>
+          You cannot do Yoga <br />
+          YOGA IS YOUR NATURAL STATE
+        </h1>
+        <button class="btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- yoga section -->
+    <section class="yoga-section">
+      <div class="container yoga">
+        <div class="content">
+          <h1>YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h1>
+          <p>
+            Donec enim diam vulputate ut. Amet venenatis urna cursus eget nunc
+            scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- info boxes section -->
+
+    <section class="boxes-info">
+      <div class="container">
+        <div class="all">
+          <div class="box">
+            <img src="./img/img-1.jpg" alt="" />
+            <h1>Why you should go to yoga</h1>
+            <p>
+              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
+              pulvinar neque laoreet sollicitudin nibh.
+            </p>
+            <div>
+              <button class="btn">view more</button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./img/img-2.jpg" alt="" />
+            <h1>Why you should go to yoga</h1>
+            <p>
+              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
+              pulvinar neque laoreet sollicitudin nibh.
+            </p>
+            <div>
+              <button class="btn">view more</button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./img/img-3.jpg" alt="" />
+            <h1>Why you should go to yoga</h1>
+            <p>
+              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
+              pulvinar neque laoreet sollicitudin nibh.
+            </p>
+            <div>
+              <button class="btn">view more</button>
+            </div>
+          </div>
+          <div class="box">
+            <img src="./img/img-4.jpg" alt="" />
+            <h1>Why you should go to yoga</h1>
+            <p>
+              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
+              pulvinar neque laoreet sollicitudin nibh.
+            </p>
+            <div>
+              <button class="btn">view more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- perfect section -->
+    <section class="perfect-section">
+      <div class="container">
+        <h1>Keep your body in perfect condition</h1>
+        <p>
+          Dignissim diam quis enim lobortis scelerisque fermentum. Ipsum a arcu
+          cursus vitae congue mauris rhoncus. Velit euismod in pellentesque
+          massa placerat duis. Nulla malesuada pellentesque elit eget gravida.
+          Enim sit amet venenatis urna. Venenatis a condimentum vitae sapien
+          pellentesque habitant morbi tristique.
+        </p>
+      </div>
+    </section>
+
+    <!-- subscription section -->
+    <section class="subscription-section">
+      <div class="container box">
+        <h1>CHOOSE YOUR CLASSES AND START YOUR <br> TRAINING</h1>
+        <button class="btn">write to usf</button>
+      </div>
+    </section>
+
+
+
+
+    <!-- foooter -->
+    <footer>
+      <div class="container">
+        <p>©  2024 - Ac |  All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--* js -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-sc");
+      const icons = document.querySelectorAll("i");
+
+      hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute("data-visible");
+        if (isVisible == "true") {
+          // qari hiding
+          mobileMenu.setAttribute("data-visible", "false");
+          icons[0].setAttribute("data-visible", "true");
+          icons[1].setAttribute("data-visible", "false");
+        } else if (isVisible == "false") {
+          // soo bandhig showing
+          mobileMenu.setAttribute("data-visible", "true");
+          icons[0].setAttribute("data-visible", "false");
+          icons[1].setAttribute("data-visible", "true");
+        }
+      });
+    </script>
+  </body>
+</html>
